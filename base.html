@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Snipp1.com | {% block title %} Shorten that URL {% endblock %}  </title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Custom styles Bootstrap Cover Template -->
+  <link href="http://getbootstrap.com/examples/cover/cover.css" rel="stylesheet">
+  {% block styles %}
+  <style>
+      body {
+          background-color: #226268;
+      }
+
+  </style>
+  {% endblock %}
+</head>
+
+<body>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+          <div class="inner cover">
+            {% block content %}
+            {% endblock %}
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Made with &hearts; in Philadelphia</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
